@@ -4,8 +4,51 @@
 {{/contentFor}}
 
 <section class="hero">
-  <div class="slider">
-    <img src="http://via.placeholder.com/2000x830">
+  <div class="slider siema">
+    <div>
+      <picture>
+        <img sizes="(max-width: 1680px) 100vw, 1680px" srcset="
+      /img/slider_1,w_440.jpg 440w,
+      /img/slider_1,w_829.jpg 829w,
+      /img/slider_1,w_1119.jpg 1119w,
+      /img/slider_1,w_1363.jpg 1363w,
+      /img/slider_1,w_1569.jpg 1569w,
+      /img/slider_1,w_1680.jpg 1680w" src="/img/slider_1,w_1680.jpg" alt="">
+      </picture>
+    </div>
+    <div>
+      <picture>
+        <img sizes="(max-width: 1680px) 100vw, 1680px" srcset="
+      /img/slider_1,w_440.jpg 440w,
+      /img/slider_1,w_829.jpg 829w,
+      /img/slider_1,w_1119.jpg 1119w,
+      /img/slider_1,w_1363.jpg 1363w,
+      /img/slider_1,w_1569.jpg 1569w,
+      /img/slider_1,w_1680.jpg 1680w" src="/img/slider_1,w_1680.jpg" alt="">
+      </picture>
+    </div>
+    <div>
+      <picture>
+        <img sizes="(max-width: 1680px) 100vw, 1680px" srcset="
+      /img/slider_1,w_440.jpg 440w,
+      /img/slider_1,w_829.jpg 829w,
+      /img/slider_1,w_1119.jpg 1119w,
+      /img/slider_1,w_1363.jpg 1363w,
+      /img/slider_1,w_1569.jpg 1569w,
+      /img/slider_1,w_1680.jpg 1680w" src="/img/slider_1,w_1680.jpg" alt="">
+      </picture>
+    </div>
+    <div>
+      <picture>
+        <img sizes="(max-width: 1680px) 100vw, 1680px" srcset="
+      /img/slider_1,w_440.jpg 440w,
+      /img/slider_1,w_829.jpg 829w,
+      /img/slider_1,w_1119.jpg 1119w,
+      /img/slider_1,w_1363.jpg 1363w,
+      /img/slider_1,w_1569.jpg 1569w,
+      /img/slider_1,w_1680.jpg 1680w" src="/img/slider_1,w_1680.jpg" alt="">
+      </picture>
+    </div>
   </div>
   <header class="container">
     <hgroup>
@@ -39,19 +82,43 @@
   <div class="row gutter">
     <div class="event col--d-3">
       <figure>
-        <img src="http://via.placeholder.com/830x550" alt="8 nov">
+        <picture>
+          <img
+          sizes="(max-width: 400px) 100vw, 400px"
+          srcset="
+          /img/event,w_300.jpg 300w,
+          /img/event,w_400.jpg 400w"
+          src="/img/event,w_400.jpg"
+          alt="8 nov">
+        </picture>
       </figure>
       <time>8 <span>nov</span></time>
     </div>
     <div class="event col--d-3">
       <figure>
-        <img src="http://via.placeholder.com/830x550" alt="8 nov">
+        <picture>
+          <img
+          sizes="(max-width: 400px) 100vw, 400px"
+          srcset="
+          /img/event2,w_300.jpg 300w,
+          /img/event2,w_400.jpg 400w"
+          src="/img/event2,w_400.jpg"
+          alt="8 nov">
+        </picture>
       </figure>
       <time>16 <span>nov</span></time>
     </div>
     <div class="event col--d-3">
       <figure>
-        <img src="http://via.placeholder.com/830x550" alt="8 nov">
+        <picture>
+          <img
+          sizes="(max-width: 600px) 100vw, 600px"
+          srcset="
+          /img/event3,w_350.jpg 350w,
+          /img/event3,w_600.jpg 600w"
+          src="/img/event3,w_600.jpg"
+          alt="8 nov">
+        </picture>
       </figure>
       <time>25 <span>nov</span></time>
     </div>
@@ -63,3 +130,7 @@
     </div>
   </div>
 </section>
+
+{{#contentFor 'scripts'}}
+<script src="/js/home.js"></script>
+{{/contentFor}}
