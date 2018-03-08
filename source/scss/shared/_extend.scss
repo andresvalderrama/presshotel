@@ -1,0 +1,8 @@
+.center-absoult {
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+}
+.image-shadow {
+  box-shadow: 0 0 1rem 0 rgba($black, .0625);
+}

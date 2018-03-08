@@ -6,5 +6,24 @@ html {
   box-sizing: inherit;
 }
 body {
-  
+  color: $fontColor;
+  background-color: $white;
+  font: 400 1rem/1.4 'Gotham', Arial, sans-sefif;
+  margin: 0;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+figure {
+  margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'BodoniXT', serif;
+  line-height: 1.125;
+  font-weight: 400;
+}
+.container {
+  max-width: 1044px;
+  margin: auto;
 }

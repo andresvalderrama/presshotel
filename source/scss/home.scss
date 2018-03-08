@@ -1,10 +1,66 @@
 @import './shared/variables';
+@import './shared/extend';
+@import './shared/grid';
+@import './shared/base';
+@import './shared/fonts';
+
 @import 'header';
+@import 'footer';
 
-body {
-  background: $red;
-}
-
-a:fullscreen {
-  color: dodgerblue;
+main.home {
+  section.hero {
+    position: relative;
+    background: $black;
+    .slider {
+      border-bottom: 13rem solid $black;
+    }
+    header {
+      background: $black;
+      bottom: 0;
+      color: $white;
+      padding-bottom: 6rem;
+      text-align: center;
+      width: 100%;
+      @extend .center-absoult;
+    }
+  }
+  section.rooms {
+    background: $gray;
+    padding: 4rem 0;
+    .info {
+      display: flex;
+      flex-direction: column;
+      footer {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-grow: 1;
+      }
+    }
+    img {
+      @extend .image-shadow;
+    }
+  }
+  section.events {
+    padding: 0 0 3rem 0;
+    h4 {
+      text-align: center;
+    }
+    .event {
+      position: relative;
+    }
+    img {
+      @extend .image-shadow;
+    }
+    time {
+      background: $fontColor;
+      color: $gray;
+      font-weight: 700;
+      left: .5rem;
+      padding: 0.25rem .5rem;
+      position: absolute;
+      top: 0;
+      text-transform: uppercase;
+    }
+  }
 }

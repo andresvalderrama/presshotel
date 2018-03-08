@@ -1,0 +1,27 @@
+$cols: 12;
+$class-col: col !default;
+$devices: s t d ld;
+
+@function calc-percent($target, $container) {
+  @return ($target / $container) * 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  /* grid */
+  @each $device in $devices{
+    @for $i from 1 through $cols {
+      .#{$class-col}--#{$device}-#{$i} {
+        flex: 0 0 calc-percent($i, $cols);
+      }
+    }
+  }
+  /* gutters */
+  &.gutter {
+    margin: 0 -.5rem;
+    [class*=#{$class-col}] {
+      padding: 0 .5rem;
+    }
+  }
+}

@@ -5,12 +5,18 @@ const babel = require('gulp-babel')
 const uglify = require('gulp-uglify')
 
 gulp.task('css', done => {
-  gulp.src('./source/scss/**/*.scss')
+  gulp.src('./source/scss/*.scss')
     .pipe(sass({
       outputStyle: 'compressed'
     }).on('error', sass.logError))
     .pipe(autoprefixer())
     .pipe(gulp.dest('public/css'))
+  done()
+})
+
+gulp.task('fonts', done => {
+  gulp.src('./source/fonts/*.?(eot|woff|woff2)')
+    .pipe(gulp.dest('public/fonts'))
   done()
 })
 
@@ -23,8 +29,8 @@ gulp.task('js', done => {
 })
 
 gulp.task('watch', done => {
-  gulp.watch('source/**/*.(js|scss)', gulp.parallel('css', 'js'))
+  gulp.watch('source/**/*.(js|scss)', gulp.parallel('css', 'js', 'fonts'))
   done()
 })
 
-gulp.task('default', gulp.parallel('css'))
+gulp.task('default', gulp.parallel('css', 'js', 'fonts'))

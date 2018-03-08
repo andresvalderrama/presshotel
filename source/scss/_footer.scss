@@ -1,0 +1,10 @@
+footer#footer {
+  background: $gray;
+  padding: .5rem 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  > div {
+    display: flex;
+    justify-content: space-between;
+  }
+}
