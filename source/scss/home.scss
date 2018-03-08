@@ -1,0 +1,10 @@
+@import './shared/variables';
+@import 'header';
+
+body {
+  background: $red;
+}
+
+a:fullscreen {
+  color: dodgerblue;
+}
