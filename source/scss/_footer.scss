@@ -3,6 +3,10 @@ footer#footer {
   padding: .5rem 0;
   font-size: 0.8rem;
   font-weight: 700;
+  a {
+    color: $fontColor;
+    text-decoration: none;
+  }
   > div {
     display: flex;
     justify-content: space-between;
