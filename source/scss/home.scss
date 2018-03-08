@@ -3,6 +3,7 @@
 @import './shared/grid';
 @import './shared/base';
 @import './shared/fonts';
+@import './shared/form';
 
 @import 'header';
 @import 'footer';
@@ -121,6 +122,11 @@ main.home {
     }
   }
   section.book {
+    position: absolute;
+    top: 10rem;
+    right: 0;
     background: $black;
+    width: 22rem;
+    padding: 2rem;
   }
 }

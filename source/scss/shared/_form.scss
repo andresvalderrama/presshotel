@@ -3,7 +3,12 @@ input {
   font-size: 100%;
   line-height: 1;
   outline: none;
+  display: block;
   &:focus {
     border-color: red;
   }
+}
+fieldset {
+  border: 0;
+  padding: 0;
 }
