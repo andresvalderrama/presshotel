@@ -12,11 +12,10 @@
 
 ### Run project
 1. Clone the repo `git clone https://github.com/andresvalderrama/presshotel.git`
-1. Install dependencies `$ npm install`
+1. Install dependencies `$ npm i`
 1. Compile public assets `$ npm run gulp`
 1. Run the server `$ npm start`
 1. Open your browser [presshotel](http://localhost:3000)
 
 ### Libraries
-1. [Siemajs](https://github.com/pawelgrzybek/siema) -  Slider
-2. []() - Form validation 
+1. [Siemajs](https://github.com/pawelgrzybek/siema) - Slider

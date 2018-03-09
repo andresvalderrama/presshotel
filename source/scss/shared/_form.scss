@@ -1,6 +1,6 @@
 :placeholder {
   color: $gray2;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 input {
@@ -9,12 +9,9 @@ input {
   line-height: 1;
   outline: none;
   border-radius: 0;
-  border: 0;
+  border: 2px solid transparent;
   width: 100%;
   padding: .75rem;
-  &:focus {
-    border-color: red;
-  }
 }
 label {
   font-size: .9rem;
@@ -30,5 +27,10 @@ fieldset {
   position: relative;
   &.center {
     text-align: center;
+  }
+  &.error {
+    input {
+      border-color: $red;
+    }
   }
 }
