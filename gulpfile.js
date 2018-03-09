@@ -23,7 +23,7 @@ gulp.task('fonts', done => {
 })
 
 gulp.task('images', done => {
-  gulp.src('./source/img/*.?(jpg|svg)')
+  gulp.src('./source/img/*.?(jpg|svg|png)')
     .pipe(gulp.dest('public/img'))
   done()
 })

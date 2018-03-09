@@ -19,7 +19,6 @@ const next = document.querySelector('.controls .next')
 prev.addEventListener('click', () => slider.prev())
 next.addEventListener('click', () => slider.next())
 
-
 /* book */
 let bookNow = document.querySelector('.booknow')
 
