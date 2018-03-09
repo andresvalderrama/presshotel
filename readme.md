@@ -11,10 +11,10 @@
 + npm `v5.5.1`
 
 ### Run project
-1. clone the repo `git clone https://github.com/andresvalderrama/presshotel.git`
-1. install dependencies `$ npm install`
-1. compile public assets `$ npm run gulp`
-1. run the server `$ npm start`
+1. Clone the repo `git clone https://github.com/andresvalderrama/presshotel.git`
+1. Install dependencies `$ npm install`
+1. Compile public assets `$ npm run gulp`
+1. Run the server `$ npm start`
 1. Open your browser [presshotel](http://localhost:3000)
 
 ### Libraries
