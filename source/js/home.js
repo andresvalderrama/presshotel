@@ -54,38 +54,6 @@ function validForm (currentTarget, event) {
     currentTarget.closest('fieldset').classList.add('error')
     event.preventDefault()
   }
-
-  valueMissing
-    ? console.log('campo no puede estar vacio')
-    : ''
-
-  tooShort
-    ? console.log(`el valor minimo es de ${currentTarget.getAttribute('minLength')} caracteres`)
-    : ''
-
-  tooLong
-    ? console.log(`el valor maximo es de ${currentTarget.getAttribute('maxLength')} caracteres`)
-    : ''
-
-  patternMismatch
-    ? console.log(`el valor debe ser ${currentTarget.getAttribute('pattern')}`)
-    : ''
-
-  typeMismatch
-    ? console.log(`no es un ${currentTarget.type}`)
-    : ''
-
-  badInput
-    ? console.log('no es un numero')
-    : ''
-
-  rangeUnderflow
-    ? console.log(`valor min es ${currentTarget.getAttribute('min')}`)
-    : ''
-
-  rangeOverflow
-    ? console.log(`valor max es ${currentTarget.getAttribute('max')}`)
-    : ''
 }
 
 for (let input of inputs) {
