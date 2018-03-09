@@ -1,13 +1,26 @@
+## Press hotel
+
+### Instructions
+
+- [*] Convert PSD to full responsive HTML/CSS. ~~Use bootstrap framework~~. 
+- [*] Background image should auto rotate every 8 seconds and arrows could be use to see previous and next slide.
+- [*] When click on “Book Now” button on the top right hand side, the booking form should slide in.
+- [-] Make all field on the form required ~~using jQuery~~. Not necessary to process the form only valid the fields.
+
 ### Requirements
 
 + node `v8.9.1`
-+ npm `5.5.1`
++ npm `v5.5.1`
 
 ### Run project
 
-0. `$ npm install`
-0. `$ npm run gulp`
-0. `$ npm start`
+1. `$ npm install`
+1. `$ npm run gulp`
+1. `$ npm start`
 
-Open browser http://localhost:3000
+Open browser [presshotel.dev](http://localhost:3000)
 
+### Libraries
+
+1. [Siemajs](https://github.com/pawelgrzybek/siema) -  Slider
+2. []() - Form validation 
