@@ -103,6 +103,7 @@ main.home {
       h2 {
         font-size: 2.25rem;
         text-transform: uppercase;
+        color: $gray2;
       }
       h5 {
         text-transform: uppercase;
@@ -110,6 +111,10 @@ main.home {
         letter-spacing: initial;
         text-align: center;
         margin: 0;
+        color: $blueDark;
+      }
+      p {
+        color: $blueDark;
       }
     }
     img {
@@ -131,6 +136,7 @@ main.home {
       text-align: center;
       text-transform: uppercase;
       font-weight: 400;
+      color: $blueDark;
     }
     .event {
       position: relative;
@@ -139,7 +145,7 @@ main.home {
       @extend .image-shadow;
     }
     time {
-      background: $fontColor;
+      background: $blueDark;
       color: $gray;
       font-weight: 700;
       font-size: 2.75rem;
@@ -165,21 +171,21 @@ main.home {
     position: fixed;
     top: 5rem;
     right: 0;
-    background: #1E1E1E;
+    background: $blackest;
     width: 20rem;
     padding: 4rem 3.25em 1rem;
     z-index: 999;
     transform: translateX(100%);
     transition: all linear 275ms;
     h2 {
-      color: $white;
+      color: $gray;
       text-align: center;
       text-transform: uppercase;
       font-size: 2.25rem;
       margin: 0 0 2rem;
     }
     p {
-      color: #9A9EA1;
+      color: $gray2;
       text-align: center;
       line-height: 1.25;
       &.group {
@@ -244,7 +250,7 @@ main.home {
 body.booknow {
   &:after {
     pointer-events: initial;
-    background: rgba($gray, .95);
+    background: $overlay;
   }
   section.book {
     transform: translateX(0)
