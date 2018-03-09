@@ -1,14 +1,29 @@
 input {
   font-family: inherit;
-  font-size: 100%;
+  font-size: .8rem;
   line-height: 1;
   outline: none;
-  display: block;
+  border-radius: 0;
+  border: 0;
+  width: 100%;
+  padding: .75rem;
   &:focus {
     border-color: red;
   }
 }
+label {
+  font-size: .9rem;
+  display: block;
+  text-transform: uppercase;
+  color: $gray;
+  margin-bottom: 0.25rem;
+}
 fieldset {
   border: 0;
+  margin: 0 0 1.25rem 0;
   padding: 0;
+  position: relative;
+  &.center {
+    text-align: center;
+  }
 }

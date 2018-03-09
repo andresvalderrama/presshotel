@@ -101,8 +101,8 @@ main.home {
     padding: 1rem 0 4rem 0;
     h4 {
       text-align: center;
-      font-family: Gotham;
       text-transform: uppercase;
+      font-weight: 400;
     }
     .event {
       position: relative;
@@ -122,11 +122,77 @@ main.home {
     }
   }
   section.book {
-    position: absolute;
-    top: 10rem;
+    position: fixed;
+    top: 5rem;
     right: 0;
     background: $black;
-    width: 22rem;
-    padding: 2rem;
+    width: 20rem;
+    padding: 4rem 3.25em 1rem;
+    z-index: 999;
+    transform: translateX(100%);
+    transition: all linear 275ms;
+    h2 {
+      color: $white;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 2.25rem;
+      margin: 0 0 2rem;
+    }
+    p {
+      text-align: center;
+      line-height: 1.25;
+      &.group {
+        text-transform: uppercase;
+      }
+    }
+    button {
+      background: transparent;
+      color: $red;
+      border: 2px solid currentColor;
+      border-radius: 3px;
+      margin: 1rem 0 2.5rem;
+      padding: .4rem .6rem .1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .input-wrapper {
+      position: relative;
+      input {
+        padding-right: 2.75rem;
+      }
+      input + svg {
+        display: block;
+        width: 1.25rem;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: .75rem;
+        path, circle {
+          fill: $red;
+        }
+      }
+    }
+    .booknow {
+      box-sizing: content-box;
+      display: block;
+      background: $black;
+      position: absolute;
+      top: 4rem;
+      right: 100%;
+      width: 7rem;
+      padding: .4rem .5rem .1rem;
+      text-align: center;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: $white;
+      transform-origin: bottom right;
+      transform: rotate(-90deg);
+    }
+  }
+}
+
+body.booknow {
+  section.book {
+    transform: translateX(0)
   }
 }
