@@ -2,10 +2,10 @@
 
 ### Instructions
 
-- [*] Convert PSD to full responsive HTML/CSS. ~~Use bootstrap framework~~. 
-- [*] Background image should auto rotate every 8 seconds and arrows could be use to see previous and next slide.
-- [*] When click on “Book Now” button on the top right hand side, the booking form should slide in.
-- [-] Make all field on the form required ~~using jQuery~~. Not necessary to process the form only valid the fields.
+- [x] Convert PSD to full responsive HTML/CSS. ~~Use bootstrap framework~~. 
+- [x] Background image should auto rotate every 8 seconds and arrows could be use to see previous and next slide.
+- [x] When click on “Book Now” button on the top right hand side, the booking form should slide in.
+- [ ] Make all field on the form required ~~using jQuery~~. Not necessary to process the form only valid the fields.
 
 ### Requirements
 
